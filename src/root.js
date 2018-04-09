@@ -16,7 +16,7 @@ import MenuRoute from './routes/MenuRoute'
 import Restaurant from './routes/Restaurant'
 import forgotPassword from './routes/ChangePassword'
 import Reauth from './routes/Reauthorize'
-
+import Careers from './routes/career'
 
 const Root = ({ store }) => (
 	<Provider store={store}>
@@ -34,6 +34,7 @@ const Root = ({ store }) => (
 		<Route exact path="/restaurant/:uid" component={Restaurant}/>
 		<Route exact path="/forgotPassword/:key" component={forgotPassword}/>
 		<Route exact path="/reauthorize/:url" component={Reauth} />
+		<Route exact path="/careers" component={Careers} />
 		<Route component={Testo} />
 		
 	</Switch>

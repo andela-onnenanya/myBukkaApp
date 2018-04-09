@@ -1,0 +1,67 @@
+.content {
+  position: absolute;
+  top: 0;
+}
+.top {
+  margin-top: 15em;
+  display: flex;
+  justify-content: center;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 2em;
+}
+
+.p {
+  margin-left: 2em;
+}
+.year {
+  float: left;
+  margin-right: 1em;
+  display: block !important;
+}
+.month {
+  float: right;
+  margin-left: 1em;
+  display: block !important;
+}
+
+.d {
+  display: flex;
+}
+
+.inp {
+  width: 90%;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.in {
+  height: 3em;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+.submit {
+  width: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9c1c26;
+  color: white;
+  margin-bottom: 5em;
+  margin-top: 2em;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+    justify-content: center;
+}
+
+span {
+  color: #9c1c26;
+}
