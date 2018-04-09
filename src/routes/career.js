@@ -61,10 +61,20 @@ export default class Careers extends Component {
                 <div>Phone:<span>*</span></div>
                 <input className="inp in" id="phone" type="tel" name="phone" placeholder="+234 ..."/>
               </label>
+              
               <label>
                 <div>Team you want to part of:<span>*</span></div>
-                <input className="inp in" id="team" type="text" name="preferred-team" />
+                
+                  <select className="inp in" id="team" type="text" name="preferred-team">
+                    <option value="intern">Intern</option>
+                    <option value="sales">Sales</option>
+                    <option value="frontend developer">Frontend Developer</option>
+                    <option value="backend developer">Backend Developer</option>
+                    <option value="fullstack developer">Fullstack Developer</option>
+                  </select>
+                
               </label>
+              
               <label>
                 Link to your best social footprint:
                 <input className="inp d in" type="text" name="social-footprint" placeholder="http://"/>
