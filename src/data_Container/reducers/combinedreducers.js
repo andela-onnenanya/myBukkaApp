@@ -7,6 +7,7 @@ import showPage from './showPageReducer'
 import signup from './signUpReducer'
 import receipt from './receiptReducer'
 import menuinview from './menuinviewReducer'
+import chefsignup from './chefSignupReducer'
 
 
 export default combineReducers({
@@ -17,5 +18,6 @@ export default combineReducers({
 	page:showPage,
 	SignUp:signup,
 	receipt:receipt,
-	menuinview:menuinview
+	menuinview:menuinview,
+	chefSignup:chefsignup
 		});

@@ -20,7 +20,7 @@ export default class Careers extends Component {
           <div className="col-md-6 left">
           
               <label>
-                <div>Full Name:<span>*</span></div>
+                <div>Full Name:<span className="sp-required">*</span></div>
                 <input  className="inp in"
                         type="text" 
                         name="name" 
@@ -29,12 +29,12 @@ export default class Careers extends Component {
               </label>
               
               <label>
-                <div>Email:<span>*</span></div>
+                <div>Email:<span className="sp-required">*</span></div>
                 <input className="inp in" id="emaila" type="text" name="email" />
               </label>
               <div className="p">
                 <label>
-                  <div>Professional experience:<span>*</span></div>
+                  <div>Professional experience:<span className="sp-required">*</span></div>
                   <div className="year">
                     <p>Year</p>
                     <input className="in" id="year" type="number" name="professional-experience-year" /> 
@@ -47,7 +47,7 @@ export default class Careers extends Component {
               </div>
               <label>
                 Elaborate your current work experience:
-                <textarea rows="10" className="inp" name="work-experience"/>
+                <textarea rows="10" className="inp t-in" name="work-experience"/>
               </label>
               <label>
                 Select interview date:
@@ -58,14 +58,15 @@ export default class Careers extends Component {
           <div className="col-md-6 right">
             
               <label>
-                <div>Phone:<span>*</span></div>
+                <div>Phone:<span className="sp-required">*</span></div>
                 <input className="inp in" id="phone" type="tel" name="phone" placeholder="+234 ..."/>
               </label>
               
               <label>
-                <div>Team you want to part of:<span>*</span></div>
+                <div>Team you want to part of:<span className="sp-required">*</span></div>
                 
                   <select className="inp in" id="team" type="text" name="preferred-team">
+                    <option value="non">Select...</option>
                     <option value="intern">Intern</option>
                     <option value="sales">Sales</option>
                     <option value="frontend developer">Frontend Developer</option>
@@ -82,10 +83,10 @@ export default class Careers extends Component {
               </label>
               <label>
                 What makes you unique to work for Bukka:
-                <textarea rows="10" name="unique-trait" className="inp" />
+                <textarea rows="10" name="unique-trait" className="inp t-in" />
               </label>
               <label>
-                <div>Submit the link to your resume:<span>*</span></div>
+                <div>Submit the link to your resume:<span className="sp-required">*</span></div>
                 <input className="inp in" id="resume" type="text" name="resume" />
               </label>
            

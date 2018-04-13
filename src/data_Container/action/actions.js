@@ -37,6 +37,11 @@ export const signup=(email,firstname,lastname,password,mobile,isCustomer)=>({
 	type:'SIGN_UP',
 	payload:axios.post(ajx.signupendpoint,{email,firstname,lastname,password,mobile,isCustomer})
 })
+// chef signup
+export const chefSignup=(firstname,lastname,email,mobile,password)=>({
+	type:'CHEF_SIGN_UP',
+	payload:axios.post(ajx.signupendpoint,{firstname,lastname,email,mobile,password})
+})
 
 //get card details
 //takes uid as argument

@@ -7,6 +7,7 @@ import {	fetch_address,
             updating_user_info,
             signout,
             signup,
+            chefSignup,
             update_cart,
             showaddmenu,
             menuview,
@@ -140,6 +141,11 @@ export default{
 		storage.dispatch(signup(email,firstname,lastname,password,mobile,isCustomer))
 		.then(()=>storage.dispatch(identify_user(email,password)))
 		.then(()=>this.toggleSignUp())
+		.catch((e)=>console.log('Sorry! There was a problem',e))
+    },
+    chefSignup(firstname,lastname,email,mobile,password,isChef){
+        storage.dispatch(chefSignup(firstname,lastname,email,mobile,password,isChef))
+        .then(()=>storage.dispatch(identify_user(email,password)))
 		.catch((e)=>console.log('Sorry! There was a problem',e))
     },
 

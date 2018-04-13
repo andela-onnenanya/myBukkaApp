@@ -61,7 +61,7 @@ const Footer =()=> {
                                 </Link>
                             </li>
                             <li>
-                                <a href="https://chef.mybukka.com">
+                                <a href="https://mybukka.com/chefs">
                                     Become a Chef
                                 </a>
                             </li>
@@ -72,7 +72,7 @@ const Footer =()=> {
                             <li><a className="zzvd">About Bukka</a></li>
                             <li><a className="zzvd">Contact</a></li>
                             <li><a className="zzvd">Help</a></li>
-                            <li><a className="zzvd">FAQs</a></li>
+                            <li><a href="https://mybukka.com/careers" className="zzvd">Career</a></li>
                         </ul>
                     </div>
                     </div>
