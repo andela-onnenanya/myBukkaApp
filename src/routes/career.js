@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import HeaderMin from "../frontpage/HeaderMin";
 import "../style/career.css";
 import Footer from "../frontpage/Footer";
+import OptionLeaf from "../frontpage/OptionLeaf";
 
 export default class Careers extends Component {
   render() {
@@ -163,6 +164,7 @@ export default class Careers extends Component {
         <div className="foot">
           <Footer />
         </div>
+        <OptionLeaf />
       </div>
     );
   }

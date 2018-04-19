@@ -3,6 +3,7 @@ import "../style/chefs.css";
 import Footer from "../frontpage/Footer";
 import Forma from "./form";
 import HeaderMin from "../frontpage/HeaderMin";
+import OptionLeaf from "../frontpage/OptionLeaf";
 
 class Chef extends Component {
   render() {
@@ -88,6 +89,7 @@ class Chef extends Component {
         <div className="foot">
           <Footer />
         </div>
+        <OptionLeaf />
       </div>
     );
   }
